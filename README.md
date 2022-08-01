@@ -139,17 +139,20 @@ Is an example use case of rebasing the three most recent commits on the current 
 11. `git commit -am"appended content to merge.txt"`
 12. `git merge new_branch_to_merge_later`
 
-Auto-merging merge.txt
+```Auto-merging merge.txt
 CONFLICT (content): Merge conflict in merge.txt
 Automatic merge failed; fix conflicts and then commit the result.
+```
 
-$ cat merge.txt
+```$ cat merge.txt
 <<<<<<< HEAD
 this is some content to mess with
 content to append
 =======
 totally different content to merge later
 >>>>>>> new_branch_to_merge_later
+```
+
 
 ### Preventing merge conflicts
 In order to avoid a merge conflict, all changes must be on different lines, or in different files, which makes the merge simple for computers to resolve. In other words, if a change introduces any ambiguity even at a single line of code an automatic merging is canceled and the whole process must be finished manually.
