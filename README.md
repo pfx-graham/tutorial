@@ -40,26 +40,41 @@ Specify text editor used for commit messages
 
 ## Creating a repository, adding and removing files to the staging area
 `mkdir project`
+
 `cd project`
+
 `git init`
+
 `git add <example_file1.txt>`
+
 `git commit`
+
 `git log`
+
 `git log --oneline`
+
 `git add <example_file2.txt>`
+
 `git commit -m "Summary of changes made, why changes were introduced."`
+
 `git rm <example_file2.txt>`
+
 `git commit -m "Removed example_file2.txt to serve as an example of removing a file."`
+
 `git log`
 
 ## Pushing one or more commits to a remote system, decentralized version control
 `git remote add origin https://github.com/repo_name/sample-repo.git`
-`git branch` 
+
+`git branch`
+
 `git push origin master`
 
 ...in a seperate directory
 `git clone https://github.com/repo_name/sample-repo.git`
+
 `cd sample-repo`
+
 `git log`
 
 ![DVCS](https://latesthackingnews.com/wp-content/uploads/2018/06/Distributed-Version-Control-System-Workflow-What-Is-Git-Edureka.png "Git is a decentralized version control system")
